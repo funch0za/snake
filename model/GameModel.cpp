@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
+#include <iostream>
 
 GameModel::GameModel() {
     std::srand(std::time(nullptr));
@@ -16,11 +17,9 @@ void GameModel::initialize() {
     // Reset game state
     snake_.clear();
     direction_ = 1; // Start moving right
-    next_direction_ = direction_;
     game_over_ = false;
     paused_ = false;
     running_ = false;
-    tick_counter_ = 0;
 
     // Initialize snake in the middle
     int start_x = FIELD_WIDTH / 2;
@@ -39,17 +38,77 @@ void GameModel::initialize() {
     updateField();
 }
 
-void GameModel::manualMove() {
-    if (running_ && !paused_ && !game_over_) {
-        moveSnake();
-        updateField();
+void GameModel::update() {
+    // Only update the field, don't move snake automatically
+    updateField();
+}
+
+void GameModel::processInput(UserAction action, bool hold) {
+    if (hold) return;
+
+    switch (action) {
+        case UserAction::Start:
+            if (!running_ || game_over_) {
+                initialize();
+                running_ = true;
+                paused_ = false;
+                game_over_ = false;
+            }
+            break;
+
+        case UserAction::Pause:
+            if (running_ && !game_over_) {
+                paused_ = !paused_;
+            }
+            break;
+
+        case UserAction::Terminate:
+            running_ = false;
+            game_over_ = true;
+            break;
+
+        case UserAction::Left:
+            if (running_ && !paused_ && !game_over_ && direction_ != 1) {
+                direction_ = 3; // Set to left
+                moveSnake(); // Move immediately after direction change
+            }
+            break;
+
+        case UserAction::Right:
+            if (running_ && !paused_ && !game_over_ && direction_ != 3) {
+                direction_ = 1; // Set to right
+                moveSnake();
+            }
+            break;
+
+        case UserAction::Up:
+            if (running_ && !paused_ && !game_over_ && direction_ != 2) {
+                direction_ = 0; // Set to up
+                moveSnake();
+            }
+            break;
+
+        case UserAction::Down:
+            if (running_ && !paused_ && !game_over_ && direction_ != 0) {
+                direction_ = 2; // Set to down
+                moveSnake();
+            }
+            break;
+
+        case UserAction::Action:
+            if (running_ && !paused_ && !game_over_) {
+                moveSnake(); // Move forward in current direction
+            }
+            break;
     }
 }
 
 void GameModel::moveSnake() {
+    if (snake_.empty()) return;
+
     auto head = snake_.front();
 
-    // Calculate new head position
+    // Calculate new head position based on direction
     switch (direction_) {
         case 0: head.second--; break; // Up
         case 1: head.first++; break;  // Right
@@ -64,7 +123,7 @@ void GameModel::moveSnake() {
         return;
     }
 
-    // Move snake
+    // Move snake - add new head
     snake_.insert(snake_.begin(), head);
 
     // Check if food eaten
@@ -72,8 +131,13 @@ void GameModel::moveSnake() {
         increaseScore();
         spawnFood();
     } else {
-        snake_.pop_back(); // Remove tail if no food eaten
+        // Remove tail if no food eaten
+        if (snake_.size() > 1) {
+            snake_.pop_back();
+        }
     }
+
+    updateField();
 }
 
 void GameModel::spawnFood() {
@@ -158,74 +222,6 @@ GameInfo GameModel::getGameInfo() const {
             speed_,
             paused_ ? 1 : 0
     };
-}
-
-void GameModel::update() {
-    // Только обновляем поле, не двигаем змейку автоматически
-    updateField();
-}
-
-void GameModel::moveForward() {
-    if (running_ && !paused_ && !game_over_) {
-        moveSnake();
-        updateField();
-    }
-}
-
-void GameModel::processInput(UserAction action, bool hold) {
-    if (hold) return;
-
-    switch (action) {
-        case UserAction::Start:
-            if (!running_ || game_over_) {
-                initialize();
-                running_ = true;
-                paused_ = false;
-                game_over_ = false;
-            }
-            break;
-
-        case UserAction::Pause:
-            if (running_ && !game_over_) {
-                paused_ = !paused_;
-            }
-            break;
-
-        case UserAction::Terminate:
-            running_ = false;
-            game_over_ = true;
-            break;
-
-        case UserAction::Left:
-            if (running_ && direction_ != 1) {
-                next_direction_ = 3;
-            }
-            break;
-
-        case UserAction::Right:
-            if (running_ && direction_ != 3) {
-                next_direction_ = 1;
-            }
-            break;
-
-        case UserAction::Up:
-            if (running_ && direction_ != 2) {
-                next_direction_ = 0;
-            }
-            break;
-
-        case UserAction::Down:
-            if (running_ && direction_ != 0) {
-                next_direction_ = 2;
-            }
-            break;
-
-        case UserAction::Action:
-            if (running_ && !paused_ && !game_over_) {
-                moveForward(); // Двигаем змейку вперед
-            }
-            break;
-    }
 }
 
 bool GameModel::isGameOver() const { return game_over_; }

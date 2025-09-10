@@ -17,14 +17,6 @@ void GameController::initializeGame() {
     model_.initialize();
 }
 
-void GameController::manualMove() {
-    model_.manualMove();
-}
-
-void GameController::moveForward() {
-    model_.moveForward();
-}
-
 void GameController::cleanup() {
     // Cleanup resources if needed
 }

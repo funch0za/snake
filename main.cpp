@@ -34,29 +34,24 @@ int main() {
             case 'w': case KEY_UP:
                 if (game_started) {
                     controller.userInput(UserAction::Up, false);
-                    // Manually move snake forward after changing direction
-                    controller.userInput(UserAction::Action, false);
                     needs_update = true;
                 }
                 break;
             case 's': case KEY_DOWN:
                 if (game_started) {
                     controller.userInput(UserAction::Down, false);
-                    controller.userInput(UserAction::Action, false);
                     needs_update = true;
                 }
                 break;
             case 'a': case KEY_LEFT:
                 if (game_started) {
                     controller.userInput(UserAction::Left, false);
-                    controller.userInput(UserAction::Action, false);
                     needs_update = true;
                 }
                 break;
             case 'd': case KEY_RIGHT:
                 if (game_started) {
                     controller.userInput(UserAction::Right, false);
-                    controller.userInput(UserAction::Action, false);
                     needs_update = true;
                 }
                 break;
@@ -92,7 +87,7 @@ int main() {
             if (info.pause) {
                 mvprintw(22, 2, "Game PAUSED - Press P to resume");
             } else if (game_started) {
-                mvprintw(22, 2, "Score: %d - Use arrows to move, space to move forward", info.score);
+                mvprintw(22, 2, "Score: %d - Use arrows to turn, space to move", info.score);
             }
             refresh();
         }

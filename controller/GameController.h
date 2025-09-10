@@ -15,8 +15,6 @@ public:
     // Additional control methods
     void initializeGame();
     void cleanup();
-    void manualMove(); // Добавьте объявление метода
-    void moveForward(); // Добавьте объявление метода
 
 private:
     GameModel model_;
