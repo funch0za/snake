@@ -26,60 +26,65 @@ int main() {
     refresh();
 
     while (running) {
-        // Handle input
+        halfdelay(info.speed);
         int ch = getch();
         bool needs_update = false;
 
         switch (ch) {
             case 'w': case KEY_UP:
                 if (game_started) {
-                    controller.userInput(UserAction::Up, false);
+                    controller.userInput(UserAction::Up, true);
                     needs_update = true;
                 }
                 break;
             case 's': case KEY_DOWN:
                 if (game_started) {
-                    controller.userInput(UserAction::Down, false);
+                    controller.userInput(UserAction::Down, true);
                     needs_update = true;
                 }
                 break;
             case 'a': case KEY_LEFT:
                 if (game_started) {
-                    controller.userInput(UserAction::Left, false);
+                    controller.userInput(UserAction::Left, true);
                     needs_update = true;
                 }
                 break;
             case 'd': case KEY_RIGHT:
                 if (game_started) {
-                    controller.userInput(UserAction::Right, false);
+                    controller.userInput(UserAction::Right, true);
                     needs_update = true;
                 }
                 break;
             case ' ': // Space for action - move forward
                 if (game_started) {
-                    controller.userInput(UserAction::Action, false);
+                    controller.userInput(UserAction::Action, true);
                     needs_update = true;
                 }
                 break;
             case 'p': // P for pause
                 if (game_started) {
-                    controller.userInput(UserAction::Pause, false);
+                    controller.userInput(UserAction::Pause, true);
                     needs_update = true;
                 }
                 break;
             case 'r': // R for start/restart
-                controller.userInput(UserAction::Start, false);
+                controller.userInput(UserAction::Start, true);
                 game_started = true;
                 needs_update = true;
                 break;
             case 'q': // Q for terminate
-                controller.userInput(UserAction::Terminate, false);
+                controller.userInput(UserAction::Terminate, true);
                 running = false;
                 break;
+            default:
+                if (game_started) {
+                    controller.userInput(UserAction::Action, false);
+                    needs_update = true;
+                }
         }
 
         // Update and render only if needed
-        if (needs_update) {
+        if (1) {
             info = controller.updateCurrentState();
             view.render(info);
 
@@ -93,7 +98,7 @@ int main() {
         }
 
         // Small delay to prevent CPU overuse
-        std::this_thread::sleep_for(std::chrono::milliseconds(50));
+      //  std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
 
     view.cleanup();

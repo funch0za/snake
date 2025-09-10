@@ -44,64 +44,69 @@ void GameModel::update() {
 }
 
 void GameModel::processInput(UserAction action, bool hold) {
-    if (hold) return;
+    if (hold) {
+        switch (action) {
+            case UserAction::Start:
+                if (!running_ || game_over_) {
+                    initialize();
+                    running_ = true;
+                    paused_ = false;
+                    game_over_ = false;
+                }
+                break;
 
-    switch (action) {
-        case UserAction::Start:
-            if (!running_ || game_over_) {
-                initialize();
-                running_ = true;
-                paused_ = false;
-                game_over_ = false;
-            }
-            break;
+            case UserAction::Pause:
+                if (running_ && !game_over_) {
+                    paused_ = !paused_;
+                }
+                break;
 
-        case UserAction::Pause:
-            if (running_ && !game_over_) {
-                paused_ = !paused_;
-            }
-            break;
+            case UserAction::Terminate:
+                running_ = false;
+                game_over_ = true;
+                break;
 
-        case UserAction::Terminate:
-            running_ = false;
-            game_over_ = true;
-            break;
+            case UserAction::Left:
+                if (running_ && !paused_ && !game_over_ && direction_ != 1) {
+                    direction_ = 3; // Set to left
+                    moveSnake(); // Move immediately after direction change
+                }
+                break;
 
-        case UserAction::Left:
-            if (running_ && !paused_ && !game_over_ && direction_ != 1) {
-                direction_ = 3; // Set to left
-                moveSnake(); // Move immediately after direction change
-            }
-            break;
+            case UserAction::Right:
+                if (running_ && !paused_ && !game_over_ && direction_ != 3) {
+                    direction_ = 1; // Set to right
+                    moveSnake();
+                }
+                break;
 
-        case UserAction::Right:
-            if (running_ && !paused_ && !game_over_ && direction_ != 3) {
-                direction_ = 1; // Set to right
-                moveSnake();
-            }
-            break;
+            case UserAction::Up:
+                if (running_ && !paused_ && !game_over_ && direction_ != 2) {
+                    direction_ = 0; // Set to up
+                    moveSnake();
+                }
+                break;
 
-        case UserAction::Up:
-            if (running_ && !paused_ && !game_over_ && direction_ != 2) {
-                direction_ = 0; // Set to up
-                moveSnake();
-            }
-            break;
+            case UserAction::Down:
+                if (running_ && !paused_ && !game_over_ && direction_ != 0) {
+                    direction_ = 2; // Set to down
+                    moveSnake();
+                }
+                break;
 
-        case UserAction::Down:
-            if (running_ && !paused_ && !game_over_ && direction_ != 0) {
-                direction_ = 2; // Set to down
-                moveSnake();
-            }
-            break;
-
-        case UserAction::Action:
-            if (running_ && !paused_ && !game_over_) {
-                moveSnake(); // Move forward in current direction
-            }
-            break;
+            case UserAction::Action:
+                if (running_ && !paused_ && !game_over_) {
+                    speed_ = std::max(speed_ - 1, 0);
+                }
+                break;
+        }
+    } else if (action == UserAction::Action) {
+        if (running_ && !paused_ && !game_over_) {
+            moveSnake(); // Move forward in current direction
+        }
     }
 }
+
 
 void GameModel::moveSnake() {
     if (snake_.empty()) return;
@@ -110,10 +115,18 @@ void GameModel::moveSnake() {
 
     // Calculate new head position based on direction
     switch (direction_) {
-        case 0: head.second--; break; // Up
-        case 1: head.first++; break;  // Right
-        case 2: head.second++; break; // Down
-        case 3: head.first--; break;  // Left
+        case 0:
+            head.second--;
+            break; // Up
+        case 1:
+            head.first++;
+            break;  // Right
+        case 2:
+            head.second++;
+            break; // Down
+        case 3:
+            head.first--;
+            break;  // Left
     }
 
     // Check collisions
@@ -150,7 +163,7 @@ void GameModel::spawnFood() {
         valid = true;
 
         // Check if food spawns on snake
-        for (const auto& segment : snake_) {
+        for (const auto &segment: snake_) {
             if (segment.first == x && segment.second == y) {
                 valid = false;
                 break;
@@ -187,18 +200,16 @@ void GameModel::increaseScore() {
 
 void GameModel::updateLevel() {
     level_ = (score_ / 50) + 1;
-    speed_ = INITIAL_SPEED - (level_ - 1) * SPEED_DECREMENT;
-    if (speed_ < 100) speed_ = 100;
 }
 
 void GameModel::updateField() {
     // Clear field
-    for (auto& row : field_) {
+    for (auto &row: field_) {
         std::fill(row.begin(), row.end(), 0);
     }
 
     // Draw snake
-    for (const auto& segment : snake_) {
+    for (const auto &segment: snake_) {
         if (segment.second >= 0 && segment.second < FIELD_HEIGHT &&
             segment.first >= 0 && segment.first < FIELD_WIDTH) {
             field_[segment.second][segment.first] = 1;
@@ -225,5 +236,7 @@ GameInfo GameModel::getGameInfo() const {
 }
 
 bool GameModel::isGameOver() const { return game_over_; }
+
 bool GameModel::isPaused() const { return paused_; }
+
 bool GameModel::isRunning() const { return running_; }
