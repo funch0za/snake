@@ -1,8 +1,8 @@
 #ifndef GAME_MODEL_HPP
 #define GAME_MODEL_HPP
 
-#include "../common/GameTypes.h"
-#include "../common/GameConstants.h"
+#include "../common/snake_types.h"
+#include "../common/snake_consts.h"
 #include <vector>
 
 class GameModel {

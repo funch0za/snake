@@ -1,4 +1,4 @@
-#include "GameModel.h"
+#include "snake_model.h"
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>

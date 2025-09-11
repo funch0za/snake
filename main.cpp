@@ -1,18 +1,21 @@
-#include "controller/GameController.h"
-#include "view/GameView.h"
+#include "controller/snake_controller.h"
+
+#ifdef CLI_UI
+#include "view/cli/snake_cli.h"
+#endif
+
 #include <unistd.h>
 #include <chrono>
 #include <thread>
 #include <iostream>
 
 #ifdef CLI_UI
-
 void tetris_loop(void) {
     GameController controller;
     GameView view;
 
     if (!view.initialize()) {
-        return 1;
+        return;
     }
 
     bool running = true;
@@ -28,49 +31,41 @@ void tetris_loop(void) {
     while (running) {
         halfdelay(info.speed);
         int ch = getch();
-        bool needs_update = false;
 
         switch (ch) {
             case 'w': case KEY_UP:
                 if (game_started) {
                     controller.userInput(UserAction::Up, true);
-                    needs_update = true;
                 }
                 break;
             case 's': case KEY_DOWN:
                 if (game_started) {
                     controller.userInput(UserAction::Down, true);
-                    needs_update = true;
                 }
                 break;
             case 'a': case KEY_LEFT:
                 if (game_started) {
                     controller.userInput(UserAction::Left, true);
-                    needs_update = true;
                 }
                 break;
             case 'd': case KEY_RIGHT:
                 if (game_started) {
                     controller.userInput(UserAction::Right, true);
-                    needs_update = true;
                 }
                 break;
             case ' ': // Space for action - move forward
                 if (game_started) {
                     controller.userInput(UserAction::Action, true);
-                    needs_update = true;
                 }
                 break;
             case 'p': // P for pause
                 if (game_started) {
                     controller.userInput(UserAction::Pause, true);
-                    needs_update = true;
                 }
                 break;
             case 'r': // R for start/restart
                 controller.userInput(UserAction::Start, true);
                 game_started = true;
-                needs_update = true;
                 break;
             case 'q': // Q for terminate
                 controller.userInput(UserAction::Terminate, true);
@@ -79,7 +74,6 @@ void tetris_loop(void) {
             default:
                 if (game_started) {
                     controller.userInput(UserAction::Action, false);
-                    needs_update = true;
                 }
         }
 
@@ -98,7 +92,6 @@ void tetris_loop(void) {
 
     view.cleanup();
 }
-
 #endif
 
 #ifdef DESKTOP_UI

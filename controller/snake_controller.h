@@ -1,8 +1,8 @@
 #ifndef GAME_CONTROLLER_HPP
 #define GAME_CONTROLLER_HPP
 
-#include "../common/GameTypes.h"
-#include "../model/GameModel.h"
+#include "../common/snake_types.h"
+#include "../model/snake_model.h"
 
 class GameController {
 public:

@@ -1,4 +1,4 @@
-#include "GameController.h"
+#include "snake_controller.h"
 
 GameController::GameController() {
     initializeGame();

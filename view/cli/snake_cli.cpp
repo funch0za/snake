@@ -1,5 +1,5 @@
-#include "GameView.h"
-#include "../common/GameConstants.h"
+#include "snake_cli.h"
+#include "../../common/snake_consts.h"
 #include <iostream>
 
 GameView::GameView() {}

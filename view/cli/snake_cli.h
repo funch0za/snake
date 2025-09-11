@@ -1,7 +1,7 @@
 #ifndef GAME_VIEW_HPP
 #define GAME_VIEW_HPP
 
-#include "../common/GameTypes.h"
+#include "../../common/snake_types.h"
 #include <ncurses.h>
 
 class GameView {

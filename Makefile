@@ -4,15 +4,15 @@ CXXFLAGS = -std=c++20 -Wall -Wextra
 
 # Source and header files
 SRCS_CLI = main.cpp \
-       model/GameModel.cpp \
-       controller/GameController.cpp \
-       view/GameView.cpp
+       model/snake_model.cpp \
+       controller/snake_controller.cpp \
+       view/cli/snake_cli.cpp
 
-HEADERS_CLI = common/GameTypes.h \
-          common/GameConstants.h \
-          model/GameModel.h \
-          controller/GameController.h \
-          view/GameView.h
+HEADERS_CLI = common/snake_types.h \
+          common/snake_consts.h \
+          model/snake_model.h \
+          controller/snake_controller.h \
+          view/cli/snake_cli.h
 
 # Output executable
 CLI = cli
