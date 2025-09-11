@@ -1,0 +1,224 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARCHITECTURE_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+CLI	Makefile	/^CLI = cli$/;"	m
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/Users\/funch0za\/develop\/s21\/snake\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/opt\/homebrew\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/Users\/funch0za\/develop\/s21\/snake$/;"	m
+COMPILER_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_INTERNAL_STR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL_STR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+CURSES_INCLUDES	Makefile	/^CURSES_INCLUDES = $/;"	m
+CURSES_LIBS	Makefile	/^CURSES_LIBS = -lcurses$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -std=c++20 -Wall -Wextra$/;"	m
+CXX_STD	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#    define CXX_STD /;"	d	file:
+CXX_STD	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define CXX_STD /;"	d	file:
+CXX_STD_11	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_11 /;"	d	file:
+CXX_STD_14	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_14 /;"	d	file:
+CXX_STD_17	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_17 /;"	d	file:
+CXX_STD_20	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_20 /;"	d	file:
+CXX_STD_23	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_23 /;"	d	file:
+CXX_STD_98	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD_98 /;"	d	file:
+C_STD	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_STD /;"	d	file:
+C_STD_11	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define C_STD_11 /;"	d	file:
+C_STD_17	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define C_STD_17 /;"	d	file:
+C_STD_23	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define C_STD_23 /;"	d	file:
+C_STD_99	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define C_STD_99 /;"	d	file:
+C_VERSION	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION /;"	d	file:
+C_VERSION	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define C_VERSION$/;"	d	file:
+C_VERSION	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define C_VERSION /;"	d	file:
+DEC	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DESKTOP	Makefile	/^DESKTOP = desktop$/;"	m
+Down	common/GameTypes.h	/^    Down,$/;"	m	class:UserAction
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+FIELD_HEIGHT	common/GameConstants.h	/^constexpr int FIELD_HEIGHT = 20;$/;"	v
+FIELD_WIDTH	common/GameConstants.h	/^constexpr int FIELD_WIDTH = 10;$/;"	v
+GAME_CONSTANTS_HPP	common/GameConstants.h	/^#define GAME_CONSTANTS_HPP$/;"	d
+GAME_CONTROLLER_HPP	controller/GameController.h	/^#define GAME_CONTROLLER_HPP$/;"	d
+GAME_MODEL_HPP	model/GameModel.h	/^#define GAME_MODEL_HPP$/;"	d
+GAME_TYPES_HPP	common/GameTypes.h	/^#define GAME_TYPES_HPP$/;"	d
+GAME_VIEW_HPP	view/GameView.h	/^#define GAME_VIEW_HPP$/;"	d
+GameController	controller/GameController.cpp	/^GameController::GameController() {$/;"	f	class:GameController
+GameController	controller/GameController.h	/^class GameController {$/;"	c
+GameInfo	common/GameTypes.h	/^struct GameInfo {$/;"	s
+GameModel	model/GameModel.cpp	/^GameModel::GameModel() {$/;"	f	class:GameModel
+GameModel	model/GameModel.h	/^class GameModel {$/;"	c
+GameView	view/GameView.cpp	/^GameView::GameView() {}$/;"	f	class:GameView
+GameView	view/GameView.h	/^class GameView {$/;"	c
+HEADERS_CLI	Makefile	/^HEADERS_CLI = common\/GameTypes.h \\$/;"	m
+HEX	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+ID_VOID_MAIN	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+INITIAL_SPEED	common/GameConstants.h	/^constexpr int INITIAL_SPEED = 15;$/;"	v
+Left	common/GameTypes.h	/^    Left,$/;"	m	class:UserAction
+OBJS_CLI	Makefile	/^OBJS_CLI = $(SRCS_CLI:.cpp=.o)$/;"	m
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+Pause	common/GameTypes.h	/^    Pause,$/;"	m	class:UserAction
+RM	build/Makefile	/^RM = \/opt\/homebrew\/bin\/cmake -E rm -f$/;"	m
+Right	common/GameTypes.h	/^    Right,$/;"	m	class:UserAction
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define SIMULATE_VERSION_PATCH /;"	d	file:
+SRCS_CLI	Makefile	/^SRCS_CLI = main.cpp \\$/;"	m
+STRINGIFY	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+Start	common/GameTypes.h	/^    Start,$/;"	m	class:UserAction
+Terminate	common/GameTypes.h	/^    Terminate,$/;"	m	class:UserAction
+Up	common/GameTypes.h	/^    Up,$/;"	m	class:UserAction
+UserAction	common/GameTypes.h	/^enum class UserAction {$/;"	c
+__has_include	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^#  define __has_include(/;"	d	file:
+__has_include	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define __has_include(/;"	d	file:
+checkCollision	model/GameModel.cpp	/^bool GameModel::checkCollision(int x, int y) const {$/;"	f	class:GameModel
+cleanup	controller/GameController.cpp	/^void GameController::cleanup() {$/;"	f	class:GameController
+cleanup	view/GameView.cpp	/^void GameView::cleanup() {$/;"	f	class:GameView
+const	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+direction_	model/GameModel.h	/^    int direction_; \/\/ 0: up, 1: right, 2: down, 3: left$/;"	m	class:GameModel
+drawBorders	view/GameView.cpp	/^void GameView::drawBorders() {$/;"	f	class:GameView
+drawField	view/GameView.cpp	/^void GameView::drawField(const std::vector<std::vector<int>>& field) {$/;"	f	class:GameView
+drawSidebar	view/GameView.cpp	/^void GameView::drawSidebar(const GameInfo& game_info) {$/;"	f	class:GameView
+field	common/GameTypes.h	/^    std::vector<std::vector<int>> field;$/;"	m	struct:GameInfo
+field_	model/GameModel.h	/^    std::vector<std::vector<int>> field_;$/;"	m	class:GameModel
+food_	model/GameModel.h	/^    std::pair<int, int> food_;$/;"	m	class:GameModel
+game_over_	model/GameModel.h	/^    bool game_over_;$/;"	m	class:GameModel
+getGameInfo	model/GameModel.cpp	/^GameInfo GameModel::getGameInfo() const {$/;"	f	class:GameModel
+high_score	common/GameTypes.h	/^    int high_score;$/;"	m	struct:GameInfo
+high_score_	model/GameModel.h	/^    int high_score_;$/;"	m	class:GameModel
+increaseScore	model/GameModel.cpp	/^void GameModel::increaseScore() {$/;"	f	class:GameModel
+info_arch	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_cray	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_language_extensions_default	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v
+info_language_extensions_default	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_extensions_default = "INFO" ":" "extensions_default["$/;"	v
+info_language_standard_default	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_standard_default =$/;"	v
+info_language_standard_default	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_standard_default = "INFO" ":" "standard_default["$/;"	v
+info_platform	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate_version	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
+info_version	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v
+info_version	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";$/;"	v
+info_version_internal	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";$/;"	v
+info_version_internal	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";$/;"	v
+initialize	model/GameModel.cpp	/^void GameModel::initialize() {$/;"	f	class:GameModel
+initialize	view/GameView.cpp	/^bool GameView::initialize() {$/;"	f	class:GameView
+initializeGame	controller/GameController.cpp	/^void GameController::initializeGame() {$/;"	f	class:GameController
+isGameOver	model/GameModel.cpp	/^bool GameModel::isGameOver() const { return game_over_; }$/;"	f	class:GameModel
+isPaused	model/GameModel.cpp	/^bool GameModel::isPaused() const { return paused_; }$/;"	f	class:GameModel
+isRunning	model/GameModel.cpp	/^bool GameModel::isRunning() const { return running_; }/;"	f	class:GameModel
+level	common/GameTypes.h	/^    int level;$/;"	m	struct:GameInfo
+level_	model/GameModel.h	/^    int level_;$/;"	m	class:GameModel
+main	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	main.cpp	/^int main() {$/;"	f
+model_	controller/GameController.h	/^    GameModel model_;$/;"	m	class:GameController
+moveSnake	model/GameModel.cpp	/^void GameModel::moveSnake() {$/;"	f	class:GameModel
+next	common/GameTypes.h	/^    std::vector<std::vector<int>> next;$/;"	m	struct:GameInfo
+next_	model/GameModel.h	/^    std::vector<std::vector<int>> next_;$/;"	m	class:GameModel
+next_direction_	model/GameModel.h	/^    int next_direction_;$/;"	m	class:GameModel
+pause	common/GameTypes.h	/^    int pause;$/;"	m	struct:GameInfo
+paused_	model/GameModel.h	/^    bool paused_;$/;"	m	class:GameModel
+processInput	model/GameModel.cpp	/^void GameModel::processInput(UserAction action, bool hold) {$/;"	f	class:GameModel
+qnxnto	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	build/CMakeFiles/4.0.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+render	view/GameView.cpp	/^void GameView::render(const GameInfo& game_info) {$/;"	f	class:GameView
+running_	model/GameModel.h	/^    bool running_;$/;"	m	class:GameModel
+score	common/GameTypes.h	/^    int score;$/;"	m	struct:GameInfo
+score_	model/GameModel.h	/^    int score_;$/;"	m	class:GameModel
+showGameOver	view/GameView.cpp	/^void GameView::showGameOver() {$/;"	f	class:GameView
+showPause	view/GameView.cpp	/^void GameView::showPause() {$/;"	f	class:GameView
+snake_	model/GameModel.h	/^    std::vector<std::pair<int, int>> snake_;$/;"	m	class:GameModel
+spawnFood	model/GameModel.cpp	/^void GameModel::spawnFood() {$/;"	f	class:GameModel
+speed	common/GameTypes.h	/^    int speed;$/;"	m	struct:GameInfo
+speed_	model/GameModel.h	/^    int speed_;$/;"	m	class:GameModel
+tetris_loop	main.cpp	/^void tetris_loop(void) {$/;"	f
+tick_counter_	model/GameModel.h	/^    int tick_counter_;$/;"	m	class:GameModel
+update	model/GameModel.cpp	/^void GameModel::update() {$/;"	f	class:GameModel
+updateCurrentState	controller/GameController.cpp	/^GameInfo GameController::updateCurrentState() {$/;"	f	class:GameController
+updateField	model/GameModel.cpp	/^void GameModel::updateField() {$/;"	f	class:GameModel
+updateLevel	model/GameModel.cpp	/^void GameModel::updateLevel() {$/;"	f	class:GameModel
+userInput	controller/GameController.cpp	/^void GameController::userInput(UserAction action, bool hold) {$/;"	f	class:GameController
+volatile	build/CMakeFiles/4.0.2/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+~GameView	view/GameView.cpp	/^GameView::~GameView() {$/;"	f	class:GameView
