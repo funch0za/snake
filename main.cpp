@@ -5,7 +5,9 @@
 #include <thread>
 #include <iostream>
 
-int main() {
+#ifdef CLI_UI
+
+void tetris_loop(void) {
     GameController controller;
     GameView view;
 
@@ -16,11 +18,9 @@ int main() {
     bool running = true;
     bool game_started = false;
 
-    // Initial render
     GameInfo info = controller.updateCurrentState();
     view.render(info);
 
-    // Display instructions
     mvprintw(22, 2, "Controls: R-Start, Arrows-Move, P-Pause, Q-Quit");
     mvprintw(23, 2, "Press 'R' to start the game");
     refresh();
@@ -83,12 +83,10 @@ int main() {
                 }
         }
 
-        // Update and render only if needed
         if (1) {
             info = controller.updateCurrentState();
             view.render(info);
 
-            // Display status
             if (info.pause) {
                 mvprintw(22, 2, "Game PAUSED - Press P to resume");
             } else if (game_started) {
@@ -96,11 +94,21 @@ int main() {
             }
             refresh();
         }
-
-        // Small delay to prevent CPU overuse
-      //  std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
 
     view.cleanup();
-    return 0;
+}
+
+#endif
+
+#ifdef DESKTOP_UI
+
+void tetris_loop(void) {
+}
+
+#endif
+
+int main() {
+  tetris_loop();  
+  return 0;
 }
