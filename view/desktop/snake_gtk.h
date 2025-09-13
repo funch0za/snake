@@ -20,13 +20,14 @@ public:
     GtkWidget* drawing_area;
     GtkWidget* sidebar_box;
 
+    bool game_over;
+
 private:
     void drawField(const std::vector<std::vector<int>>& field, cairo_t* cr);
     void drawSidebar(const GameInfo& game_info);
     void drawBorders(cairo_t* cr);
     
     GameInfo current_game_info;
-    bool game_over;
     bool paused;
 };
 

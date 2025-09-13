@@ -109,14 +109,14 @@ gboolean game_update_callback(gpointer data) {
         GameInfo info = g_controller->updateCurrentState();
         g_view->render(info);
         
-// TODO: display GAME OVER screen
-#if 0
-        if (info.game_over) {
+
+
+       g_controller->userInput(UserAction::Action, false);
+        if (g_view->game_over) {
             g_view->showGameOver();
             g_timer_id = 0; // Stop timer
             return FALSE;
         }
-#endif
     }
     return TRUE; // Continue timer
 }
@@ -126,20 +126,21 @@ gboolean action_callback_(gpointer data) {
         GameInfo info = g_controller->updateCurrentState();
         g_view->render(info);
         
-// TODO: display GAME OVER screen
-#if 0
-        if (info.game_over) {
+        if (g_view->game_over) {
             g_view->showGameOver();
             g_timer_id = 0; // Stop timer
             return FALSE;
         }
-#endif
     }
     return TRUE; // Continue timer
 }
 
 gboolean on_key_press(GtkWidget* widget, GdkEventKey* event, gpointer data) {
     if (!g_controller) return FALSE;
+
+    auto create_timer = [](guint speed_) -> guint {
+      return g_timeout_add(speed_ * 20, game_update_callback, NULL);
+    };
 
     switch (event->keyval) {
         case GDK_KEY_Up:
@@ -177,6 +178,11 @@ gboolean on_key_press(GtkWidget* widget, GdkEventKey* event, gpointer data) {
         case GDK_KEY_space:
             if (g_game_started) {
                 g_controller->userInput(UserAction::Action, true);
+                GameInfo info = g_controller->updateCurrentState();    
+                if (g_timer_id) {
+                  g_source_remove(g_timer_id);
+                  g_timer_id = create_timer(info.speed);
+                }
             }
             break;
             
@@ -189,7 +195,7 @@ gboolean on_key_press(GtkWidget* widget, GdkEventKey* event, gpointer data) {
                     g_view->showPause();
                 } else {
                     if (!g_timer_id) {
-                        g_timer_id = g_timeout_add_seconds(0, game_update_callback, NULL);
+                        g_timer_id = create_timer(info.speed);
                     }
                 }
             }
@@ -202,7 +208,7 @@ gboolean on_key_press(GtkWidget* widget, GdkEventKey* event, gpointer data) {
             // TODO: useless?
             if (!g_timer_id) {
                 GameInfo info = g_controller->updateCurrentState();
-                g_timer_id = g_timeout_add_seconds(0, game_update_callback, NULL);
+                g_timer_id = create_timer(info.speed);
             }
             break;
             
